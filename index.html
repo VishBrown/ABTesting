@@ -48,9 +48,9 @@
         <div class="variants-metrics">
             <h2>Chosen Metrics</h2>
             <ul>
-                <li>Time on Page: The total time a user spends on the webpage, indicating engagement.</li>
-                <li>Misclick Rate: The frequency with which users click outside the intended interactive elements, indicating navigation clarity.</li>
-                <li>Mouse Move Distance: Reflects user activity and engagement level.</li>
+                <li><span class="bold-text">Time on Page:</span> The total time a user spends on the webpage, indicating engagement.</li>
+                <li><span class="bold-text">Misclick Rate:</span> The frequency with which users click outside the intended interactive elements, indicating navigation clarity.</li>
+                <li><span class="bold-text">Move Distance:</span> Reflects user activity and engagement level.</li>
             </ul>
         </div>
 
@@ -59,21 +59,21 @@
             <h2>Creating Hypotheses</h2>
             <h3>Hypotheses for Time on Page</h3>
             <ul>
-                <li>Null Hypothesis (H0): The average time spent on the webpage is the same for users of version B as for users of version A</li>
-                <li>Alternative Hypothesis (H1): The average time spent on the webpage is lower for users of version B than for users of version A.</li>
-                <li>Prediction: Since version B has been enhanced with identifiable clickable elements, we can predict a rejection of the null hypothesis.</li>
+                <li><span class="underlined-text">Null Hypothesis (H0):</span> The average time spent on the webpage is the same for users of version B as for users of version A</li>
+                <li><span class="underlined-text">Alternative Hypothesis (H1):</span> The average time spent on the webpage is lower for users of version B than for users of version A.</li>
+                <li><span class="underlined-text">Prediction:</span> Since version B has been enhanced with identifiable clickable elements, we can predict a rejection of the null hypothesis.</li>
             </ul>
             <h3>Hypotheses for Misclick Rate</h3>
             <ul>
-                <li>Null Hypothesis (H0): The misclick rate for users on version B of the webpage is the same as for users on version A</li>
-                <li>Alternative Hypothesis (H1): The misclick rate for users on version B of the webpage is lower than for users on version A.</li>
-                <li>Since version B includes optimized design that clarify the clickable elements, we might expect to reject the null hypothesis.</li>
+                <li><span class="underlined-text">Null Hypothesis (H0):</span> The misclick rate for users on version B of the webpage is the same as for users on version A</li>
+                <li><span class="underlined-text">Alternative Hypothesis (H1):</span> The misclick rate for users on version B of the webpage is lower than for users on version A.</li>
+                <li><span class="underlined-text">Prediction:</span>Since version B includes optimized design that clarify the clickable elements, we might expect to reject the null hypothesis.</li>
             </ul>   
             <h3>Hypotheses for Mouse Move Distance </h3>
             <ul>
-                <li>Null Hypothesis (H0): The average mouse move distance for users on version B of the webpage is the same as for users on version A.</li>
-                <li>Alternative Hypothesis (H1): The average mouse move distance for users on version B of the webpage is lower than for users on version A, suggesting that users are able to find what they’re looking for faster</li>
-                <li>Prediction: Since version B has been enhanced with identifiable clickable elements, we can predict a rejection of the null hypothesis.</li>
+                <li><span class="underlined-text">Null Hypothesis (H0):</span> The average mouse move distance for users on version B of the webpage is the same as for users on version A.</li>
+                <li><span class="underlined-text">Alternative Hypothesis (H1):</span> The average mouse move distance for users on version B of the webpage is lower than for users on version A, suggesting that users are able to find what they’re looking for faster</li>
+                <li><span class="underlined-text">Prediction:</span> Since version B has been enhanced with identifiable clickable elements, we can predict a rejection of the null hypothesis.</li>
             </ul>             
             <h3>Reasoning Behind Alternative Hypotheses</h3>
             <p>The alternative Hypotheses were created to understand how specific improvements to variant B can affect User Experience. For the misclick rate, a lower rate in version B would suggest more intuitive and user-friendly navigation. Users spending lower time on page might indicate that users are able to find out what they seek faster. Lastly, a lower mouse move distance could also signify that users are able to find what they're looking for more effectively.</p>  
@@ -85,46 +85,98 @@
             <p>Diving into the results obtained after experimentation, statistical measures were undertaken to validate Hypotheses. The choice of statistical test depends on the type of data (categorical vs. continuous) and the specific hypotheses that were tested.</p>
             <h3>Time on Page</h3>
             <ul>
-                <li>Test Chosen and Why: A one-tailed t-test was chosen for "Time on Page" because we were specifically interested in whether version B led to a decrease in the average time spent on the page, indicating a specific directional hypothesis.</li>
-                <li>Statistical Significance: The p-value (A < B) of 0.5969849451 suggests that the difference between versions A and B with respect to the time spent on the page is not statistically significant, as it exceeds the typical significance level of 0.05.</li>
-                <li>Important Values</li>
+                <li><span class="underlined-text">Test Chosen and Why:</span> A one-tailed t-test was chosen for "Time on Page" because we were specifically interested in whether version B led to a decrease in the average time spent on the page, indicating a specific directional hypothesis.</li>
+                <li><span class="underlined-text">Statistical Significance:</span> The p-value (A < B) of 0.5969849451 suggests that the difference between versions A and B with respect to the time spent on the page is not statistically significant, as it exceeds the typical significance level of 0.05.</li>
+                <li><span class="underlined-text">Important Values:</span></li>
                 <ul>
                     <li>T-score: 0.246755915 indicates the difference in means relative to the spread or variability of the scores. A low T-score here reflects a small difference not likely due to random chance.</li>
                     <li>Degrees of Freedom: 54.15633026, which affects the critical values for determining significance</li>
                 </ul>
-                <li>Conclusion: We fail to reject the null hypothesis, indicating that we do not have sufficient evidence to conclude that version B leads to a lower time on page compared to version A.</li>
+                <li><span class="underlined-text">Conclusion:</span> We fail to reject the null hypothesis, indicating that we do not have sufficient evidence to conclude that version B leads to a lower time on page compared to version A.</li>
             </ul>
 
 
             <h3>Misclick Rate</h3>
             <ul>
-                <li>Test Chosen and Why: The Chi-squared test was used for the "Misclick Rate" because it's a categorical variable (misclicked or not), and we wanted to see if there was an association between webpage version and misclick occurrences.</li>
-                <li>Statistical Significance**: The p-value of 0.24435472 suggests that the difference in misclick rates between versions A and B is not statistically significant, as it is above the typical alpha level of 0.05.</li>
-                <li>Important Values</li>
+                <li><span class="underlined-text">Test Chosen and Why:</span> The Chi-squared test was used for the "Misclick Rate" because it's a categorical variable (misclicked or not), and we wanted to see if there was an association between webpage version and misclick occurrences.</li>
+                <li><span class="underlined-text">Statistical Significance:</span> The p-value of 0.24435472 suggests that the difference in misclick rates between versions A and B is not statistically significant, as it is above the typical alpha level of 0.05.</li>
+                <li><span class="underlined-text">Important Values:</span></li>
                 <ul>
                     <li>Chi-squared Statistic: 1.355294118, which measures the discrepancy between observed and expected frequencies but is not enough to indicate a significant association.</li>
                     <li>Degrees of Freedom (df): 1, relevant for understanding the distribution of the chi-squared statistic.</li>
                 </ul>
-                <li>Conclusion: We fail to reject the null hypothesis, indicating no significant evidence of an association between the webpage version and misclick rate.</li>
+                <li><span class="underlined-text">Conclusion:</span> We fail to reject the null hypothesis, indicating no significant evidence of an association between the webpage version and misclick rate.</li>
             </ul>
 
 
             <h3>Mouse Move Distance </h3>
             <ul>
-                <li>Test Chosen and Why: A one-tailed t-test was selected for "Mouse Move Distance" due to a directional hypothesis predicting that version B would reduce the average mouse move distance, suggesting improved user interface efficiency.                </li>
-                <li>Statistical Significance:The p-value (A < B) of 0.9141809453 indicates no statistically significant difference between versions A and B regarding mouse move distance, as the p-value is well above the 0.05 threshold.</li>
-                <li>Important Values</li>
+                <li><span class="underlined-text">Test Chosen and Why:</span> A one-tailed t-test was selected for "Mouse Move Distance" due to a directional hypothesis predicting that version B would reduce the average mouse move distance, suggesting improved user interface efficiency.                </li>
+                <li><span class="underlined-text">Statistical Significance:</span>The p-value (A < B) of 0.9141809453 indicates no statistically significant difference between versions A and B regarding mouse move distance, as the p-value is well above the 0.05 threshold.</li>
+                <li><span class="underlined-text">Important Values:</span></li>
                 <ul>
                     <li>T-score:1.384579999, which, despite indicating a difference in means, does not reach statistical significance in this context</li>
                     <li>Degrees of Freedom (df): 56.36188361, which is relevant for the distribution used in calculating the p-value</li>
                 </ul>
-                <li>Conclusion:  We fail to reject the null hypothesis, suggesting that there is no significant evidence to support that version B decreases mouse move distance compared to version A.</li>
+                <li><span class="underlined-text">Conclusion:</span> We fail to reject the null hypothesis, suggesting that there is no significant evidence to support that version B decreases mouse move distance compared to version A.</li>
             </ul>
         </div>
         <div class="summary-statistics">
             <h2>Summary Statistics and Conclusion</h2>
-            <p>The lack of statistical significance in the changes suggests that while the design modifications in version B might have been aimed at improving user engagement and clarity, they did not lead to measurable improvements in the metrics chosen</p>
+            
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Variant A</th>
+                    <th>Variant B</th>
+                </tr>
+                <tr>
+                    <td>COUNT</td>
+                    <td>34</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Average time on page (ms)</td>
+                    <td>12860.44118</td>
+                    <td>12002.83333</td>
+                </tr>
+                <tr>
+                    <td>Average mouse move distance (px)</td>
+                    <td>4006.559655</td>
+                    <td>3283.315562</td>
+                </tr>
+                <tr>
+                    <td>Average time to first click (ms)</td>
+                    <td>5542.941176</td>
+                    <td>4464.535714</td>
+                </tr>
+                <tr>
+                    <td>Average number of clicks</td>
+                    <td>3.088235294</td>
+                    <td>2.566666667</td>
+                </tr>
+                <tr>
+                    <td>Number of misclicks</td>
+                    <td>7</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Finished the task</td>
+                    <td>34</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <td>Mode of number of clicks</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+            </table>
+            <p>Metrics from over 30 users were analyzed. Most users were able to complete the booking in 2 clicks or less. The changes made to Variant B seem to have improved the process on average with users spending less time on the page to make the booking and using a lesser number of clicks. However, two users were not able to complete the task.</p>
+            <p>
+                That being said, The lack of statistical difference in with the hypotheses makes one question whether the changes in version B were good enough to truly improve user clarity as they did not lead to measurable improvements in the metrics chosen
+            </p>            
         </div>
+        
 
     <footer>
         <p>CS-1300 A/B Testing Handin</p>
