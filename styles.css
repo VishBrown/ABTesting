@@ -1,0 +1,110 @@
+/* Basic reset for styling */
+.profile-picture {
+    display: block;
+    margin: 1rem auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+
+/* Typography */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 32px;
+}
+
+/* Section Styling */
+.introduction, .project-overview, .variant-changes, .variants-metrics, .creating-hypotheses, .statistical-testing, .summary-statistics {
+    margin-bottom: 48px;
+    padding: 2rem;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Introduction Section */
+.introduction {
+    text-align: center;
+    padding: 48px 32px;
+    background-color: #f0f8ff;
+}
+
+.custom-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.custom-button:hover {
+    background-color: #0056b3;
+}
+
+/* Common Styling for New Sections */
+.project-overview, .variant-changes, .variants-metrics, .creating-hypotheses, .statistical-testing, .summary-statistics {
+    background-color: #f0f8ff;
+}
+
+/* Variant Changes Section Styling */
+.variant-changes-container {
+    display: flex;
+    justify-content: center; /* Center the content in the container */
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between the image wrappers */
+}
+
+.variant-wrapper {
+    flex: 1; /* Gives each wrapper flexibility to expand */
+    max-width: 45%; /* Sets a max-width for larger screens */
+    text-align: center; /* Center the text label under the image */
+}
+
+.variant-image {
+    width: 100%; /* Makes the image responsive within its container */
+    height: auto;
+    margin-bottom: 10px; /* Space between the image and its label */
+}
+
+.variant-wrapper figcaption {
+    display: block; /* Ensures it's a block-level element */
+    font-weight: bold; /* Makes caption text bold */
+    text-align: center; /* Ensures text is centered under the image */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .variant-wrapper {
+        max-width: 100%; /* Allows the image to take full width on smaller screens */
+    }
+}
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .variant-changes-container, .wireframes-container, .mockups-container {
+        flex-direction: column;
+    }
+    .variant-image, .sketch-image, .wireframe-image, .mockup-image {
+        width: 100%;
+    }
+    .style-guide img {
+        width: 100%;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
