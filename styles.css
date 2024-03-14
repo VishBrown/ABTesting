@@ -23,6 +23,7 @@ body {
 .bold-text {
     font-weight: bold;
 }
+
 /* Section Styling */
 .introduction, .project-overview, .variant-changes, .variants-metrics, .creating-hypotheses, .statistical-testing, .summary-statistics {
     margin-bottom: 48px;
@@ -55,7 +56,7 @@ body {
     background-color: #0056b3;
 }
 
-/* Common Styling for New Sections */
+/* Common Styling for Sections */
 .project-overview, .variant-changes, .variants-metrics, .creating-hypotheses, .statistical-testing, .summary-statistics {
     background-color: #f0f8ff;
 }
@@ -63,52 +64,45 @@ body {
 /* Variant Changes Section Styling */
 .variant-changes-container {
     display: flex;
-    justify-content: center; /* Center the content in the container */
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 20px; /* Adds space between the image wrappers */
+    gap: 20px;
 }
 
 .variant-wrapper {
-    flex: 1; /* Gives each wrapper flexibility to expand */
-    max-width: 45%; /* Sets a max-width for larger screens */
-    text-align: center; /* Center the text label under the image */
+    flex: 1;
+    max-width: 45%;
+    text-align: center;
 }
 
 .variant-image {
-    width: 100%; /* Makes the image responsive within its container */
+    width: 100%;
     height: auto;
-    margin-bottom: 10px; /* Space between the image and its label */
+    margin-bottom: 10px;
 }
 
 .variant-wrapper figcaption {
-    display: block; /* Ensures it's a block-level element */
-    font-weight: bold; /* Makes caption text bold */
-    text-align: center; /* Ensures text is centered under the image */
+    display: block;
+    font-weight: bold;
+    text-align: center;
 }
 
+/*Styling for the table*/
 table {
-    width: 100%; /* Make the table take the full width of its container */
-    border-collapse: collapse; /* Collapse borders */
-    margin-top: 1rem; /* Add some space above the table */
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
 }
 
 th, td {
-    border: 1px solid #ddd; /* Add a border to each cell */
-    padding: 8px; /* Add some padding for spacing inside cells */
-    text-align: left; /* Align text to the left */
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
 }
 
 th {
-    background-color: #83a6da; /* Differentiate headers with a background color */
-    font-weight: bold; /* Make header text bold */
-}
-
-
-/* Media Queries */
-@media (max-width: 768px) {
-    .variant-wrapper {
-        max-width: 100%; /* Allows the image to take full width on smaller screens */
-    }
+    background-color: #83a6da;
+    font-weight: bold;
 }
 
 
@@ -123,6 +117,9 @@ th {
     }
     .style-guide img {
         width: 100%;
+    }
+    .variant-wrapper {
+        max-width: 100%;
     }
 }
 
